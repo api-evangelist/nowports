@@ -1,8 +1,27 @@
 aid: nowports
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nowports.png
 name: Nowports
-description: 'Nowports is a company surfaced as a portfolio company of partech, y-combinator and added
-  to the API Evangelist network as a stub for enrichment. Sector: Applicative SaaS. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Nowports is a digital freight forwarder for Latin America, offering
+  technology-enabled international logistics across ocean, air, and ground freight.
+  Its Centraliza platform centralizes shipment tracking, document management, and
+  alerts, while adjacent services cover cargo insurance and GPS tracking (Protege)
+  and inventory financing and factoring (Financia). Backed by Partech and Y
+  Combinator, Nowports serves importers and exporters on major trade routes through
+  its authenticated web app at app.nowports.com. As of this profile Nowports
+  exposes no public developer API, SDK, or developer portal; access is via its
+  authenticated web platform.
 url: https://raw.githubusercontent.com/api-evangelist/nowports/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Applicative Saas
+- Freight Forwarding
+- Logistics
+- Supply Chain
+- Shipping
+- International Trade
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nowports-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/nowports-vulnerability-disclosure.yml
+- type: Security
+  url: https://nowports.com/en/security
 - type: Website
   url: https://nowports.com/
+- type: Login
+  url: https://app.nowports.com/
+- type: Support
+  url: https://nowports.com/en/faq
+- type: TermsOfService
+  url: https://nowports.com/en/terms-of-services
+- type: PrivacyPolicy
+  url: https://nowports.com/en/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
